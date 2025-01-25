@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chatbot Multiagente Educativo</title>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="icon" type="image/x-icon" href="./imagenes/favicon.png">
+  <link rel="stylesheet" media="all" href="style.css" />
+
+
+
+</head>
+
+
+<body>
+  <!-- Botón flotante "Acerca de" -->
+  <div class="about-btn" onclick="toggleAbout()"></div>
+
+
+
+  <!-- Integrantes -->
+  <div class="about-modal" id="aboutModal">
+    <h3>Integrantes del Grupo</h3>
+    <ul>
+      <li>📌 1</li>
+      <li>📌 2</li>
+      <li>📌 3</li>
+      <li>📌 4</li>
+    </ul>
+  </div>
+
+  <div class="form-wrapper">
+    <div class="form">
+      <div class="header">
+        <h1>Chatbot Multiagente Educativo.</h1>
+        <p class="intro">Un asistente inteligente que responde preguntas académicas con precisión, manteniendo
+          conversaciones coherentes y adaptadas a cada usuario. 🚀📚.</p>
+      </div>
+      <!-- Contenedor para las Conversaciones -->
+      <div id="conversationContainer"></div>
+    </div>
+  </div>
+
+
+
+  <iframe src="https://bot.typebot.grupointec.co/pruebabot" style="border: none; width: 80%; height: 100vh"></iframe>
+  <script type="text/javascript" src="scripts.js"></script>
+
+  <div class="floating-images">
+    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Icono 1">
+    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135789.png" alt="Icono 2">
+    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135757.png" alt="Icono 3">
+  </div>
+
+  <div class="footer">
+    <img src="https://campus.talentotechvalle.co/favicon.ico" alt="Logo">
+    <span>Bootcamp Inteligencia Artificial Talentotechvalle</span>
+  </div>
+
+  <div class="arrow-indicator" id="arrowIndicator"></div>
+</body>
+
+</html>
