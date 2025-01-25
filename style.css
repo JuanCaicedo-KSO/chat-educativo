@@ -1,34 +1,34 @@
 @import "https://fonts.googleapis.com/css?family=Raleway:300,400,500,900,700,300|Montserrat:300,400,700";
 
 body {
-  font-family    : "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color          : #000000;
-  background     : linear-gradient(310deg, #5823fb, #9058bd, #24b2fb, #24fba8);
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #000000;
+  background: linear-gradient(310deg, #5823fb, #9058bd, #24b2fb, #24fba8);
   background-size: 600% 600%;
-  position       : relative;
-  transition     : all 0.3s ease-in-out;
-  animation      : oscillateBG 10s ease infinite;
-  width          : 100vw;
-  height         : 100vh;
-  display        : flex;
-  align-items    : center;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  animation: oscillateBG 10s ease infinite;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  flex-direction : column;
+  flex-direction: column;
 }
 
 .form-wrapper {
-  padding        : 0 5vw 6vw;
-  display        : flex;
-  align-items    : center;
+  padding: 0 5vw 6vw;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  height         : 100vh;
-  position       : relative;
-  z-index        : 10;
+  height: 100vh;
+  position: relative;
+  z-index: 10;
 }
 
 .form-wrapper .form {
-  max-width : 468px;
-  margin    : auto;
+  max-width: 468px;
+  margin: auto;
   text-align: center;
 }
 
@@ -37,18 +37,18 @@ body {
 }
 
 .form-wrapper p {
-  color        : #aaa;
-  font-weight  : 300;
+  color: #aaa;
+  font-weight: 300;
   margin-bottom: 30px;
-  text-align   : justify;
+  text-align: justify;
 }
 
 .form-wrapper h1 {
-  color      : #fff;
+  color: #fff;
   font-weight: 700;
-  font-size  : 66px;
+  font-size: 66px;
   line-height: 62px;
-  text-align : left;
+  text-align: left;
 }
 
 .form-wrapper h1 span:first-child {
@@ -60,17 +60,17 @@ body {
 }
 
 button {
-  background : transparent;
-  outline    : none;
+  background: transparent;
+  outline: none;
   user-select: none;
-  cursor     : not-allowed;
-  display    : block;
-  color      : #fff;
-  border     : 0;
+  cursor: not-allowed;
+  display: block;
+  color: #fff;
+  border: 0;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size  : 24px;
+  font-size: 24px;
   line-height: 1em;
-  margin     : 20px 0 50px;
+  margin: 20px 0 50px;
 }
 
 button.submit {
@@ -79,33 +79,33 @@ button.submit {
 
 button.submit .inner {
   position: relative;
-  display : block;
+  display: block;
 }
 
 button.submit .inner:before {
-  content         : "";
-  position        : absolute;
-  width           : calc(100% - 8px);
-  height          : 3px;
+  content: "";
+  position: absolute;
+  width: calc(100% - 8px);
+  height: 3px;
   background-color: #fff;
-  top             : 0;
-  left            : 0;
-  opacity         : 0;
-  transition      : all 0.25s ease-in-out;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.25s ease-in-out;
 }
 
 button.submit:hover .inner:before {
-  opacity  : 0.5;
+  opacity: 0.5;
   transform: translate(0, 30px);
 }
 
 p.intro {
-  font-family   : "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-align    : left;
-  font-weight   : 300;
-  color         : rgba(255, 255, 255, 0.5);
-  line-height   : 1.5em;
-  font-size     : 0.9em;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: left;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.5em;
+  font-size: 0.9em;
   letter-spacing: 0.1em;
 }
 
@@ -114,94 +114,94 @@ select.btr-select {
 }
 
 .btr-select {
-  width     : 100%;
-  cursor    : pointer;
-  position  : relative;
-  margin    : 0 0 30px;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  margin: 0 0 30px;
   text-align: left;
-  color     : #fff;
+  color: #fff;
 }
 
 dl.btr-select dt {
-  width        : 100%;
-  box-sizing   : border-box;
-  color        : inherit;
-  padding      : 18px 25px;
-  position     : relative;
-  line-height  : 1.2em;
-  font-size    : 18px;
-  font-weight  : 300;
-  border       : solid 5px rgba(0, 0, 0, 0.3);
-  box-shadow   : 10px 10px 0 rgba(0, 0, 0, 0.3);
+  width: 100%;
+  box-sizing: border-box;
+  color: inherit;
+  padding: 18px 25px;
+  position: relative;
+  line-height: 1.2em;
+  font-size: 18px;
+  font-weight: 300;
+  border: solid 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
   border-radius: 50px;
 }
 
 dl.btr-select dt::after {
-  content      : "";
-  position     : absolute;
-  width        : 10px;
-  height       : 10px;
-  border-right : solid 3px #fff;
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-right: solid 3px #fff;
   border-bottom: solid 3px #fff;
-  right        : 20px;
-  top          : calc(50% - 9px);
-  transform    : rotate(45deg);
-  z-index      : 2;
+  right: 20px;
+  top: calc(50% - 9px);
+  transform: rotate(45deg);
+  z-index: 2;
 }
 
 dl.btr-select dt::after.open::after {
   transform: rotate(225deg);
-  top      : calc(50% - 7px);
-  z-index  : 1;
-  opacity  : 0;
+  top: calc(50% - 7px);
+  z-index: 1;
+  opacity: 0;
 }
 
 dl.btr-select dd {
-  position  : absolute;
-  width     : 100%;
-  font-size : 18px;
-  z-index   : 10;
-  top       : 0;
-  left      : 0;
-  margin    : 0;
+  position: absolute;
+  width: 100%;
+  font-size: 18px;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  margin: 0;
   visibility: hidden;
-  opacity   : 0;
-  transform : translate(0px, 0px);
+  opacity: 0;
+  transform: translate(0px, 0px);
 }
 
 dl.btr-select dd ul {
   list-style: none;
-  margin    : 0;
-  padding   : 18px;
+  margin: 0;
+  padding: 18px;
   box-shadow: 10px 10px 0 #2cffce;
   text-align: left;
 }
 
 dl.btr-select dd.open {
-  visibility   : visible;
-  opacity      : 1;
-  transition   : all 0.3s ease-in-out;
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
   margin-bottom: 0px;
-  transform    : translate(10px, 10px);
-  z-index      : 3;
+  transform: translate(10px, 10px);
+  z-index: 3;
 }
 
 dl.btr-select dd.open ul {
-  background   : white;
+  background: white;
   border-radius: 20px;
-  list-style   : none;
-  margin       : 0;
-  padding      : 18px;
-  box-shadow   : 10px 10px 10px rgba(0, 0, 0, 0.13);
-  text-align   : left;
-  font-weight  : 300;
+  list-style: none;
+  margin: 0;
+  padding: 18px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.13);
+  text-align: left;
+  font-weight: 300;
 }
 
 dl.btr-select dd.open ul li {
-  width     : 100%;
+  width: 100%;
   box-sizing: border-box;
-  color     : #777;
-  padding   : 8px;
+  color: #777;
+  padding: 8px;
 }
 
 dl.btr-select dd.open ul li:first-child {
@@ -213,23 +213,23 @@ dl.btr-select dd.open ul li:hover {
 }
 
 textarea {
-  font-family  : "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  width        : 100%;
-  box-sizing   : border-box;
-  color        : inherit;
-  padding      : 18px 26px;
-  position     : relative;
-  line-height  : 1.2em;
-  font-size    : 18px;
-  font-weight  : 300;
-  border       : solid 5px rgba(0, 0, 0, 0.3);
-  box-shadow   : 10px 10px 0 rgba(0, 0, 0, 0.3);
-  background   : transparent;
-  outline      : none;
-  user-select  : none;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+  color: inherit;
+  padding: 18px 26px;
+  position: relative;
+  line-height: 1.2em;
+  font-size: 18px;
+  font-weight: 300;
+  border: solid 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+  background: transparent;
+  outline: none;
+  user-select: none;
   margin-bottom: 30px;
-  color        : #000000;
-  height       : auto;
+  color: #000000;
+  height: auto;
   border-radius: 50px;
 }
 
@@ -260,39 +260,39 @@ textarea::-webkit-input-placeholder {
 }
 
 .subject-container- {
-  margin-top    : 20px;
-  padding       : 10px;
-  border        : 1px solid #ccc;
-  border-radius : 8px;
-  background    : #f9f9f9;
-  display       : flex;
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #f9f9f9;
+  display: flex;
   flex-direction: column;
-  align-items   : center;
-  max-width     : 400px;
+  align-items: center;
+  max-width: 400px;
 }
 
 .subject-label {
-  font-size    : 18px;
-  font-weight  : bold;
+  font-size: 18px;
+  font-weight: bold;
   margin-bottom: 5px;
 }
 
 .subject-image {
-  width        : 100px;
-  height       : 100px;
+  width: 100px;
+  height: 100px;
   margin-bottom: 10px;
 }
 
 .subject-wrapper {
-  display        : flex;
+  display: flex;
   justify-content: space-between;
-  align-items    : flex-start;
-  gap            : 20px;
-  margin-bottom  : 20px;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 20px;
 }
 
 .subject-container {
-  flex      : 1;
+  flex: 1;
   /* Ocupa todo el espacio disponible */
   text-align: center;
 }
@@ -304,25 +304,25 @@ textarea::-webkit-input-placeholder {
 
 /* Contenedor de imágenes flotantes */
 .floating-images {
-  position      : fixed;
-  left          : 50px;
-  top           : 50%;
-  transform     : translateY(-50%);
-  display       : flex;
+  position: fixed;
+  left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
   flex-direction: column;
-  gap           : 15px;
-  z-index       : 1000;
+  gap: 15px;
+  z-index: 1000;
 }
 
 /* Estilos para cada imagen */
 .floating-images img {
-  width        : 100px;
-  height       : 100px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  object-fit   : cover;
-  border       : 3px solid white;
-  box-shadow   : 0 4px 8px rgba(0, 0, 0, 0.3);
-  transition   : transform 0.3s ease-in-out;
+  object-fit: cover;
+  border: 3px solid white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
 }
 
 /* Efecto al pasar el mouse */
@@ -339,38 +339,39 @@ textarea::-webkit-input-placeholder {
 
 /* ----- Créditos al final de la página ----- */
 .footer {
-  position       : fixed;
-  bottom         : 0;
-  width          : 100%;
-  background     : #222;
-  color          : white;
-  text-align     : center;
-  padding        : 10px;
-  font-size      : 14px;
-  display        : flex;
-  align-items    : center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  gap            : 10px;
+  gap: 10px;
 }
 
 .footer img {
-  width : 30px;
+  width: 30px;
   height: 30px;
 }
 
 /* ----- Botón flotante "Acerca de" ----- */
 .about-btn {
-  position       : fixed;
-  top            : 20px;
-  right          : 20px;
-  width          : 60px;
-  height         : 60px;
-  background     : url('https://cdn-icons-png.flaticon.com/512/84/84380.png') no-repeat center;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background: url("https://cdn-icons-png.flaticon.com/512/84/84380.png")
+    no-repeat center;
   background-size: cover;
-  border-radius  : 50%;
-  cursor         : pointer;
-  transition     : transform 0.3s;
-  z-index        : 1000;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s;
+  z-index: 1000;
 }
 
 .about-btn:hover {
@@ -379,52 +380,52 @@ textarea::-webkit-input-placeholder {
 
 /* ----- Modal flotante de integrantes ----- */
 .about-modal {
-  position     : fixed;
-  top          : 80px;
-  right        : 20px;
-  width        : 250px;
-  background   : white;
-  box-shadow   : 0 4px 10px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  width: 250px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   border-radius: 8px;
-  display      : none;
-  padding      : 15px;
-  z-index      : 1001;
+  display: none;
+  padding: 15px;
+  z-index: 1001;
 }
 
 .about-modal h3 {
-  margin    : 0;
+  margin: 0;
   text-align: center;
 }
 
 .about-modal ul {
   list-style: none;
-  padding   : 0;
+  padding: 0;
 }
 
 .about-modal li {
-  padding   : 5px 0;
+  padding: 5px 0;
   text-align: center;
 }
 
 /* Flecha animada */
 .arrow-indicator {
-  position       : fixed;
-  bottom         : 20px;
+  position: fixed;
+  bottom: 20px;
   /* Ajusta la posición según el botón del chatbot */
-  right          : 100px;
-  width          : 50px;
-  height         : 50px;
-  background     : url('https://cdn-icons-png.flaticon.com/512/271/271226.png') no-repeat center;
+  right: 100px;
+  width: 50px;
+  height: 50px;
+  background: url("https://cdn-icons-png.flaticon.com/512/271/271226.png")
+    no-repeat center;
   background-size: contain;
-  animation      : bounce 1.5s infinite;
-  z-index        : 999;
-  cursor         : pointer;
-  filter         : invert(1);
+  animation: bounce 1.5s infinite;
+  z-index: 999;
+  cursor: pointer;
+  filter: invert(1);
 }
 
 /* Animación de rebote */
 @keyframes bounce {
-
   0%,
   100% {
     transform: translateY(0);
