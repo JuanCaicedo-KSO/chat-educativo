@@ -14,10 +14,13 @@
     <script type="module">
       import Typebot from "https://cdn.jsdelivr.net/npm/@typebot.io/js@0.3.37/dist/web.js";
 
-      Typebot.initBubble({
+      Typebot.initStandard({
         typebot: "pruebabot",
         apiHost: "https://bot.typebot.grupointec.co",
         previewMessage: { message: "¿Tienes alguna pregunta?" },
+        onAnswer: (answer) => {
+          console.log(answer);
+        },
         theme: {
           button: { backgroundColor: "#5823fb", size: "large" },
           previewMessage: {
@@ -27,12 +30,13 @@
             closeButtonIconColor: "#5823fb",
           },
           chatWindow: { backgroundColor: "#fff" },
+          alwaysOpen: true,
         },
       });
     </script>
   </head>
 
-  <body>
+  <body class="container">
     <!-- Botón flotante "Acerca de" -->
     <div class="about-btn" onclick="toggleAbout()"></div>
 
@@ -40,10 +44,12 @@
     <div class="about-modal" id="aboutModal">
       <h3>Integrantes del Grupo</h3>
       <ul>
-        <li>📌 1</li>
-        <li>📌 2</li>
-        <li>📌 3</li>
-        <li>📌 4</li>
+        <li>Giovanni Velez</li>
+        <li>Orlando Guerrero </li>
+        <li>Carol Jimenez</li>
+        <li>Juan Camilo Caicedo</li>
+        <li>Victor Caicedo</li>
+        <li>Nicolás Valencia</li>
       </ul>
     </div>
 
@@ -57,32 +63,27 @@
             usuario. 🚀📚.
           </p>
         </div>
+        <div class="icono-profesor" style="display: none;">
+          
+          <img
+            src=""
+            alt="Profesor"
+            id="iconoProfesor"
+          />
+        </div>
         <!-- Contenedor para las Conversaciones -->
         <div id="conversationContainer"></div>
       </div>
     </div>
-    <script type="text/javascript" src="scripts.js"></script>
+    
+    <typebot-standard></typebot-standard>
 
-    <div class="floating-images">
-      <img
-        src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
-        alt="Icono 1"
-      />
-      <img
-        src="https://cdn-icons-png.flaticon.com/512/3135/3135789.png"
-        alt="Icono 2"
-      />
-      <img
-        src="https://cdn-icons-png.flaticon.com/512/3135/3135757.png"
-        alt="Icono 3"
-      />
-    </div>
+    
+    <script type="text/javascript" src="scripts.js"></script>
 
     <div class="footer">
       <img src="https://campus.talentotechvalle.co/favicon.ico" alt="Logo" />
       <span>Bootcamp Inteligencia Artificial Talentotechvalle</span>
     </div>
-
-    <div class="arrow-indicator" id="arrowIndicator"></div>
   </body>
 </html>

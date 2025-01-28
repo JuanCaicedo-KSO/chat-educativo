@@ -9,6 +9,7 @@ function autosize() {
       "height:" + el.scrollHeight + "px;" + "min-height:" + elh + "px;";
   }, 0);
 }
+
 function simpleSelect() {
   "use strict";
   var selectHolder, selectClass;
@@ -50,7 +51,7 @@ function simpleSelect() {
 $(document).ready(simpleSelect);
 
 // Contenedor Typebot
-const observerTarget = document.querySelector('[data-element-type="variable"]');
+const observerTarget = document.querySelector('typebot-standard');
 
 if (observerTarget) {
   const observer = new MutationObserver((mutations) => {
@@ -142,7 +143,7 @@ function addMessageToSubject(subject, message) {
 // Obtener los mensajes del shadow DOM
 function captureMessages() {
   // Obtener el shadow root del chatbot
-  const shadowHost = document.querySelector("typebot-bubble");
+  const shadowHost = document.querySelector("typebot-standard");
   if (!shadowHost) return;
 
   const shadowRoot = shadowHost.shadowRoot;
@@ -168,7 +169,28 @@ function captureMessages() {
       latestSubject = "Historia y Filosofia";
     } else if (!areaText.includes("Profesor de")) {
       // Validacion extra
-      searchAndEmbedInfo(areaText); // Buscar información
+      // searchAndEmbedInfo(areaText); // Buscar información
+    }
+
+    // Actualizar el icono del profesor
+    const iconoProfesor = document.getElementById("iconoProfesor");
+    const nombreProfesor = document.getElementById("nombreProfesor");
+    const iconoContenedor = document.querySelector(".icono-profesor");
+    
+    if (latestSubject === "Matematicas") {
+      iconoProfesor.src = "https://cdn-icons-png.flaticon.com/512/2084/2084541.png";
+      iconoProfesor.alt = "Matematicas";
+    } else if (latestSubject === "Biologia") {
+      iconoProfesor.src = "https://cdn-icons-png.flaticon.com/512/2941/2941552.png";
+      iconoProfesor.alt = "Biologia";
+    } else if (latestSubject === "Historia y Filosofia") {
+      iconoProfesor.src = "https://cdn-icons-png.flaticon.com/512/4576/4576683.png";
+      iconoProfesor.alt = "Historia y Filosofia";
+    }
+    
+    // Mostrar el contenedor del icono
+    if (latestSubject) {
+      iconoContenedor.style.display = "block";
     }
   });
 
